@@ -24,13 +24,26 @@
           </header>
         );
       }
+      const dishes = ["pizza", "tacos", "sushi"];
+
+      const dishesObject = dishes.map((dish, i) => ({
+        id: i,
+        title: dish,
+      }));
+
       function Main(props) {
         return (
           <section>
-            <p>
-              We serve the most {props.adjective}{" "}
-              food around.
-            </p>
+            <img
+              height={200}
+              src="https://images.pexels.com/photos/2059151/pexels-photo-2059151.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              alt=""
+            />
+            <ul>
+              {props.dishes.map((dish) => (
+                <li key={dish.id}>{dish.title}</li>
+              ))}
+            </ul>
           </section>
         );
       }
@@ -47,18 +60,13 @@
         return (
           <div>
             <Header name="Cindy" />
-            <Main adjective="amazing" />
-            <Footer
-              year={new Date().getFullYear()}
-            />
+            <Main adjective="amazing" dishes={dishesObject} />
+            <Footer year={new Date().getFullYear()} />
           </div>
         );
       }
 
-      ReactDOM.render(
-        <App />,
-        document.getElementById("root")
-      );
+      ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>
