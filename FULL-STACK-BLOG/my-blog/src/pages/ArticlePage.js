@@ -8,12 +8,13 @@ const ArticlePage = () => {
   const [ articleInfo, setArticleInfo] = useState({ upvotes: 0, commnets: []});
   const {articleId} = useParams();
 
-  useEffect( async ()=>{
-
-    const response = await axios.get(`http:/localhost:8000/api/articles/${articleId}`);
-    const newArticleInfo = response.data;
-
-    setArticleInfo(newArticleInfo);
+  useEffect( ()=>{
+    const loadArticleInfo = async () => {
+      const response = await axios.get(`http:/localhost:8000/api/articles/${articleId}`);
+      const newArticleInfo = response.data;
+      setArticleInfo(newArticleInfo);
+    }
+    loadArticleInfo();
   }, []);
   
   const article = articles.find((article) => article.name === articleId);
