@@ -1,15 +1,18 @@
+import { Link } from "react-router-dom";
 const ProfileSection = () => {
   return (
     <>
-      <div className="profile-section">
-        <div className="profile-img-container">
-          <img src="./logos/profile_logo.jpeg" />
-        </div>
-        <div className="profile-content">
+      <Link to="/" className="logo">
+        <div className="info-header">
+          <img
+            src="./logos/profile_logo.jpeg"
+            alt="Profile"
+            className="profile-picture"
+          />
           <h1>Parth Gajjar</h1>
-          <p>Developer</p>
+          <h2>Developer</h2>
         </div>
-      </div>
+      </Link>
     </>
   );
 };

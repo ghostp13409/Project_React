@@ -1,5 +1,5 @@
 import ProfileSection from "./ProfileSection";
-import SidebarOptions from "./SidebarOptions copy";
+import SidebarOptions from "./SidebarOptions";
 
 const Sidebar = () => {
   return (

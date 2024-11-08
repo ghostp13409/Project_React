@@ -18,6 +18,7 @@ body{
   height: 100vh;
 }
 
+/* Sidebar */
 
 .sidebar{
   border: 2px solid rgb(29, 39, 54);
@@ -26,6 +27,11 @@ body{
   transition: all 0.2s ease-in-out;
   background-color: rgb(29, 39, 54);
   width: 25%;
+}
+
+.logo{
+  text-decoration: none;
+  color: white;
 }
 
 .profile-img-container{
@@ -127,6 +133,7 @@ body{
   margin: 20px;
   padding: 20px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Make the main content scrollable */
 }
 
 .sidebar{
@@ -146,3 +153,146 @@ body{
 .sidebarOptions td{
   width: 100%;
 }
+
+/* Projects */
+
+.project-card {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin: 16px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-card .tags {
+  margin-top: 8px;
+}
+
+.project-card .tag {
+  background-color: #007bff;
+  color: white;
+  padding: 4px 8px;
+  margin-right: 4px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.tag-filter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.filter-button {
+  padding: 8px 16px;
+  margin: 0 4px;
+  cursor: pointer;
+  border: none;
+  background-color: #f0f0f0;
+  border-radius: 4px;
+}
+
+.filter-button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.projects-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 20px;
+  padding: 20px
+}
+
+/* Rough */
+
+/* Info Page Styling */
+.info-page {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.info-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 250px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.info-header h1 {
+  margin: 10px 0 5px;
+  font-size: 2.5em;
+  color: #007bff;
+}
+
+.info-header h2 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.info-content {
+  padding: 20px;
+}
+
+.info-section {
+  margin-bottom: 30px;
+}
+
+.info-section h3 {
+  font-size: 1.5em;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.info-section p, .info-section ul {
+  line-height: 1.6;
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-section li {
+  margin-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+/* Rough 2 */
+
+.education-section {
+  width: fit-content;
+}
+
+.info-section {
+  background-color: rgb(29, 39, 54);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
