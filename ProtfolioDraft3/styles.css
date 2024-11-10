@@ -1,0 +1,70 @@
+body {
+  background-image: linear-gradient(to right, rgb(10, 15, 25), rgb(15, 27, 46));
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.body {
+  margin-top: 50px;
+  background-color: rgb(15, 27, 46);
+  width: 80%;
+  border: 1px solid black;
+}
+
+.banner {
+  display: flex;
+}
+
+.profileInfo {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  border: 1px solid black;
+}
+
+.profileLogoContainer {
+  width: 250px;
+}
+
+.profileLogoContainer img {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.profileNameContainer {
+  text-align: center;
+}
+
+.banner_skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1.6rem;
+  margin: 20px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: #0d1726;
+}
+
+.banner_skills h4:nth-child(even) {
+  grid-column: span 2;
+}
+
+.banner_skills h4:nth-child(odd) {
+  grid-column: span 1;
+}
+
+.banner_skills h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  background-color: #0f1b2e;
+}
