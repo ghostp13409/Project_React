@@ -5,26 +5,10 @@ import { Skills } from "./data";
 const SkillsPage = () => {
   return (
     <section id="skills" className="min-h-screen p-8">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+      <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
           Here's Some Cool Stuff I Did 👨‍🎓
         </h1>
-
-        <p className="text-xl text-gray-300 mb-6 mt-3">
-          I've been studying Computer Programming and Analysis at Conestoga
-          College for a while now.
-        </p>
-        <div className="flex gap-4">
-          <div className="flex items-center gap-2 text-gray-400">
-            <Code size={20} />
-            <span>1000+ days of code</span>
-          </div>
-          <div className="flex items-center gap-2 text-gray-400">
-            <Coffee size={20} />
-            <span>∞ cups of coffee</span>
-          </div>
-        </div>
-      </div>
+      
       {/* <ProfileStats className="mt-6" /> */}
       {/* Education Section */}
       <div className="bg-gray-800 p-6 rounded-lg mb-6 mt-6 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
