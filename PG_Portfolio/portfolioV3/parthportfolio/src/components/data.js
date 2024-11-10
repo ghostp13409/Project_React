@@ -1,6 +1,9 @@
+import { color } from "chart.js/helpers";
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
 
+
+// Social Links
 export const socials = [
   {
     title: "Github",
@@ -24,6 +27,7 @@ export const socials = [
   },
 ];
 
+// Projects
 export const projects = [
   {
     id: 1,
@@ -66,3 +70,43 @@ export const projects = [
     tags: ["JavaScript", "Express", "MongoDB", "EJS"],
   },
 ];
+
+
+// Skills
+export const Skills = [
+  {
+    id: 1,
+    title: "Languages",
+    tags: ["Java", "C#", "Python", "JavaScript", "HTML", "CSS"],
+    color: "bg-blue-600"
+  },
+  {
+    id: 2,
+    title: "Frameworks",
+    tags: ["React", "Express.js", "ASP.NET", "Node", "Entity Framework", "EJS"],
+    color: "bg-green-600"
+  },
+  {
+    id: 3,
+    title: "Databases",
+    tags:["MySQL", "SQLite", "MongoDB"],
+    color: "bg-purple-600"
+  },
+  {
+    id: 4,
+    title: "Data Structures and Algorithms",
+    tags: [
+      "Arrays",
+      "Stacks",
+      "Queues",
+      "Hash Tables",
+      "Binary Serach",
+      "Two-Pointer",
+      "Bubble Sort",
+      "Insertion Sort",
+      "Selection Sort",
+      "Merge Sort",
+    ],
+    color: "bg-sky-900"
+  }
+]
