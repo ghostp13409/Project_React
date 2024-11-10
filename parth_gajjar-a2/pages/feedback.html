@@ -1,0 +1,286 @@
+<!--
+    Name:        Parth Gajjar
+    Student ID:  8959999
+    Email:       pgajjar9999@conestogac.on.ca
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Marvel's Spider-Man</title>
+    <link rel="icon" type="image/x-icon" href="../images/logos/fevicon.png">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+</head>
+
+<body>
+
+    <!--Header-->
+    <header>
+        <img src="../images/logos/Spiderman_logo.png" alt="Spider-Man Logo">
+        <div>
+            <h1>Marvel's Spider-Man Wiki</h1>
+            <p>A wiki for Marvel's Spider-Man</p>
+        </div>
+    </header>
+
+    <!--Nav-->
+    <nav>
+        <ul class="ftier">
+            <li><a href="../index.html">HOME</a></li>
+            <li><a href="../pages/lore.html">LORE</a>  <!--Image-->
+                <ul class="stier">
+                    <li><a href="../pages/characters.html">CHARACTERS</a>  <!--Image-->
+
+                        <ul class="ttier">
+                            <li><a href="#">Peter Parker</a></li>
+                            <li><a href="#">Mary Jane Watson</a></li>
+                            <li><a href="#">Martin Li</a></li>
+                            <li><a href="#">May Parker</a></li>
+                            <li><a href="#">Miles Morales</a></li>
+                            <li><a href="#">Otto Octavius</a></li>
+                            <li><a href="#">Norman Osborn</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a href="#">LOCATIONS</a></li>
+                    <li><a href="#">SUITS</a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/gameplay.html">GAMEPLAY</a>  <!--Images-->
+                <ul class="stier">
+                    <li><a href="#">ENEMIES</a></li>
+                    <li><a href="../pages/movelist.html">MOVES LIST</a></li>  <!--Table-->
+                    <li><a href="#">GADGETS </a></li>
+                </ul>
+            </li>
+            <li><a href="../pages/feedback.html">FEEDBACK</a></li>  <!--Form-->
+        </ul>
+    </nav>
+
+    <!--Aside Left-->
+    <aside class="lside">
+        <div>
+
+            <div class="lIcons">
+                <a href="../pages/lore.html">
+                    <img src="../images/Thumbnails/lore.png" alt="" class="limage">
+                </a>
+                <div class="ldiv">
+                    <h3>
+                        <a href="../pages/lore.html">Lore</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="lIcons">
+                <a href="../pages/characters.html">
+                    <img src="../images/Thumbnails/Characters_portal.png" alt="" class="limage">
+                </a>
+                <div class="ldiv">
+                    <h3>
+                        <a href="../pages/characters.html">Characters</a>
+                    </h3>
+                </div>
+            </div>
+
+            <div class="lIcons">
+                <a href="../pages/gameplay.html">
+                    <img src="../images/Thumbnails/gameplay.png" alt="" class="limage">
+                </a>
+                <div class="ldiv">
+                    <h3>
+                        <a href="../pages/gameplay.html">Gameplay</a>
+                    </h3>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!--Main-->
+    <main>
+        <h1>Feedback</h1>
+        <div class="feedform">
+            <form action="" method="post">
+                <fieldset class="personalinfo">
+                    <legend>Personal Information</legend>
+                    <div>
+                        <label for="nameN">Name: </label>
+                        <input type="text" id="nameid" name="nameN" placeholder="Enter Your Name" required>
+                    </div>
+
+                    <div>
+                        <label for="genderN">Gender: </label>
+                        <select name="gender" id="genderid" name="ganderN" required>
+                            <option value="default">--Select--</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="emailN">Email: </label>
+                        <input type="email" id="emailid" name="emailN" required>
+                    </div>
+
+                    <div>
+                        <label for="phoneN">Phone: </label>
+                        <input type="tel" id="phoneid" name="phoneN" placeholder="XXX-XXX-XXXX" required>
+                    </div>
+
+                    <div>
+                        <label for=""></label>
+                    </div>
+                </fieldset>
+
+                <fieldset class="gamedetails">
+                    <legend>Game Details</legend>
+
+                    <div>
+                        <label for="playedN">Which games have you played?</label>
+
+                        <div>
+                            <input type="checkbox" id="spidermanid" name="spidermanN">
+                            <label for="spidermanN">Marvel Spider-Man</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="milesmoralesid" name="milesmoralesN">
+                            <label for="milesmoralesN">MSM: Miles Morales</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="Spiderman2id" name="spiderman2N">
+                            <label for="spiderman2N">Marvel Spider-Man 2</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="wolveworineid" name="wolveworineN">
+                            <label for="wolveworineN">Wolverine</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="allid" name="allN">
+                            <label for="allN">ALL</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="noneid" name="noneN">
+                            <label for="noneN">None</label>
+                        </div>
+                    </div>
+
+                    <div class="playtime">
+                        <label for="playtimeN">Total Playtime: </label>
+                        <input type="number" id="playtimeid" name="playtimeN" placeholder="0 Hrs">
+                    </div>
+                </fieldset>
+
+                <fieldset class="msg">
+                    <legend>Feedback</legend>
+
+
+                    <div>
+                        <label for="questiontypeN">Select Feedback Type: </label>
+                        <select name="questiontypeN" id="questiontypeid">
+                            <option value="default">--Select--</option>
+                            <optgroup name="Feedbacks" label="Feedback">
+                                
+                                <option value="suggestion">Suggestion</option>
+                                <option value="bug Report">Bug Report</option>
+                                <option value="complaint">Complaint</option>
+                            </optgroup>
+                            <optgroup name="Help" label="Help">
+                                <option value="inquiry">Inquiry</option>
+                                <option value="support">Support</option>
+                                <option value="other">Other</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <div class="msglabel">
+                            <label for="msgboxN">Message: </label>
+                        </div>
+                        <textarea name="msgboxN" id="msgboxid" cols="50" rows="10"
+                            placeholder="Enter Your Feedback Here..." required></textarea>
+                    </div>
+                    
+                </fieldset>
+                <div class="submit">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <!--Aside Right-->
+    <aside class="rside">
+        <h2>Related Games</h2>
+        <ul>
+            <li><a href="#">Marvel's Spider-Man: Miles Morales (2020)</a></li>
+            <li><a href="#">Marvel's Spider-Man 2 (2023)</a></li>
+        </ul>
+
+        <div class="secondform">
+            <form action="" method="POST">
+
+                <div class="checkboxoptions">
+                    <label for="checkbox">My Website was...</label>
+
+                    <div>
+                        <input type="checkbox">
+                        <label for="checkbox">Fun to visit</label>
+                    </div>
+                    
+                    <div>
+                        <input type="checkbox">
+                        <label for="checkbox">Well Designed</label>
+                    </div>
+                    <div>
+                        <input type="checkbox">
+                        <label for="checkbox">Uses good colours</label>
+                    </div>
+                </div>
+                <div class="radioquestion">
+                        
+                    <label for="radioquestion"> Will you visit the site again?</label>
+
+                    <div class="radiooptions">
+
+                    
+                    <input type="radio" id="yesid" name="yesornoN">
+                    <label for="radio" class="option">Yes</label>
+
+                    <input type="radio" id="noid" name="yesornoN">
+                    <label for="radio">No</label>
+                    
+                    </div>
+                </div>
+                <p>This form gets submitted automatically while submitting the main form</p>
+            </form>
+        </div>
+    </aside>
+
+    <!--Footer-->
+    <footer>
+        <p><em>"With great powers, comes great responibility"</em></p>
+        <p>made by Parth Gajjar&copy;</p>
+    </footer>
+
+</body>
+
+</html>
+
+<!-- 
+    Credits
+    ColorPallet: Marvel's Spider-Man Wiki: https://marvels-spider-man.fandom.com/wiki/Marvel%27s_Spider-Man_Wiki:Main_Page
+    Images: Marvel's Spider-Man Wiki: https://marvels-spider-man.fandom.com/wiki/Marvel%27s_Spider-Man_Wiki:Main_Page
+ -->

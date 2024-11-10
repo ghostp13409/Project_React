@@ -11,7 +11,7 @@ const Portfolio = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["intro", "skills", "projects", "education", "hire"];
+      const sections = ["intro", "skills", "projects", "hire"];
 
       const observerCallback = (entries) => {
         entries.forEach((entry) => {
@@ -42,26 +42,25 @@ const Portfolio = () => {
 
   return (
     <div className="min-h-screen bg-gray-900 text-gray-100">
-      <div className="flex h-screen">
-        {/* Sidebar */}
-        <Sidebar />
+      <div className="flex gap-4">
+        <div className="flex h-screen p-4 rounded">
+          {/* Sidebar */}
+          <Sidebar />
 
-        {/* Main Content */}
-        <div className="flex-1 overflow-y-auto">
-          {/* Intro Section */}
-          <IntroPage />
+          {/* Main Content */}
+          <div className="flex-1 overflow-y-auto rounded-lg border-2 border-gray-800 ml-4">
+            {/* Intro Section */}
+            <IntroPage />
 
-          {/* Skills Section */}
-          <SkillsPage />
+            {/* Skills Section */}
+            <SkillsPage />
 
-          {/* Projects Section */}
-          <ProjectsPage />
+            {/* Projects Section */}
+            <ProjectsPage />
 
-          {/* Education Section */}
-          <EducationPage />
-
-          {/* Hire Me Section */}
-          <ContactPage />
+            {/* Hire Me Section */}
+            <ContactPage />
+          </div>
         </div>
       </div>
     </div>

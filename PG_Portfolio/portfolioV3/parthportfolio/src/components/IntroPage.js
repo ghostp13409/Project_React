@@ -2,24 +2,20 @@ import { Star, Code, Coffee } from "lucide-react";
 const IntroPage = () => {
   return (
     <section id="intro" className="min-h-screen p-8">
-      <div className="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden">
-        <div className="absolute top-0 right-0 p-4">
-          <Star className="text-yellow-400 animate-spin-slow" size={24} />
-        </div>
-
+      <div className="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
         <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-          Hello World! 👋
+          Welcome! 👋
         </h1>
 
         <p className="text-xl text-gray-300 mb-6">
-          Welcome to my little corner of the internet! I'm a developer who turns
-          coffee into code and bugs into features!
+          I'm Parth. I'm a developer and I build stuff! Here's some of the
+          things I can do for you in summary, so you don't have to look for
+          things
         </p>
-
         <div className="flex gap-4">
           <div className="flex items-center gap-2 text-gray-400">
             <Code size={20} />
-            <span>1,000+ commits</span>
+            <span>1000+ days of code</span>
           </div>
           <div className="flex items-center gap-2 text-gray-400">
             <Coffee size={20} />
@@ -28,101 +24,66 @@ const IntroPage = () => {
         </div>
       </div>
 
-      {/* Education Section */}
-      <h2 className="text-3xl font-bold mb-8 mt-5 text-gray-300">Education</h2>
-      <div className="bg-gray-800 p-6 rounded-lg mb-6 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h3 className="text-xl font-bold mb-2">
-          Computer Programming and Analysis (Level 3)
-        </h3>
-        <p className="text-gray-400">Conestoga College - Present</p>
+      {/* Services Section */}
+
+      <h2 className="text-3xl font-bold mb-8 mt-5 text-gray-300">
+        What can I do for you?
+      </h2>
+
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-2xl font-bold mb-4">Web Development</h3>
+          <p className="text-gray-300">
+            I can build you a website that looks great and works even better!
+          </p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-2xl font-bold mb-4">Software Engineering</h3>
+          <p className="text-gray-300">
+            I can build you a software that solves your problems
+          </p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-2xl font-bold mb-4">Database Management</h3>
+          <p className="text-gray-300">
+            I can manage your database and make sure it's secure and efficient
+          </p>
+        </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-2xl font-bold mb-4">Testing</h3>
+          <p className="text-gray-300">
+            I can test your software and make sure no bug goes unnoticed!
+          </p>
+        </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-6">
-        {["DSA", "React Essential Training", "OOP with C#", "SQLite"].map(
-          (course) => (
-            <div
-              key={course}
-              className="bg-gray-800 p-4 rounded-lg transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              <h4 className="font-bold">{course}</h4>
-              <p className="text-gray-400">Certificate</p>
-            </div>
-          )
-        )}
-      </div>
-
-      {/* Skills Section */}
-      <h2 className="text-3xl font-bold mb-8 mt-5 text-gray-300">Skills</h2>
-
-      <div className="flex flex-wrap gap-6">
-        <div className="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 className="text-xl font-bold mb-4">Languages</h3>
-          <div className="flex flex-wrap gap-2">
-            {["Java", "C#", "Python", "JavaScript", "HTML", "CSS"].map(
-              (lang) => (
-                <span
-                  key={lang}
-                  className="px-3 py-1 bg-blue-600 rounded-full text-sm transform transition-transform duration-300 hover:scale-110"
-                >
-                  {lang}
-                </span>
-              )
-            )}
-          </div>
+      {/* SKills */}
+      <h2 className="text-3xl font-bold mb-8 mt-5 text-gray-300">
+        What do I know?
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-xl font-bold mb-4">Multilingual</h3>
+          <p className="text-gray-300 ">
+            Java, Python, JavaScript, C#, React, ASP.Net, SQL, NoSQL <br /> You
+            Name it, <br /> I got it...
+          </p>
         </div>
-
-        <div className="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 className="text-xl font-bold mb-4">Frameworks</h3>
-          <div className="flex flex-wrap gap-2">
-            {["React", "Express.js", "ASP.NET", "Node"].map((framework) => (
-              <span
-                key={framework}
-                className="px-3 py-1 bg-green-600 rounded-full text-sm transform transition-transform duration-300 hover:scale-110"
-              >
-                {framework}
-              </span>
-            ))}
-          </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-xl font-bold mb-4">Frameworks and stuff</h3>
+          <p className="text-gray-300 ">
+            HTML, CSS, Bootstrap, Tailwind, React, ASP.Net, Entity Framework,
+            Node.js, Express, MongoDB, MySQL, EJS, WordPress, LINQ
+            <br /> All that cool Stuff...
+          </p>
         </div>
-
-        <div className="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 className="text-xl font-bold mb-4">Databases</h3>
-          <div className="flex flex-wrap gap-2">
-            {["MySQL", "SQLite", "MongoDB"].map((db) => (
-              <span
-                key={db}
-                className="px-3 py-1 bg-purple-600 rounded-full text-sm transform transition-transform duration-300 hover:scale-110"
-              >
-                {db}
-              </span>
-            ))}
-          </div>
-        </div>
-        <div className="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
-          <h3 className="text-xl font-bold mb-4">
-            Data Structures and Algorithms
-          </h3>
-          <div className="grid grid-cols-3 gap-2">
-            {[
-              "Arrays",
-              "Stacks",
-              "Queues",
-              "Hash Tables",
-              "Binary Serach",
-              "Two-Pointer",
-              "Bubble Sort",
-              "Insertion Sort",
-              "Selection Sort",
-              "Merge Sort",
-            ].map((dsa) => (
-              <span
-                key={dsa}
-                className="px-3 py-1 bg-sky-900 rounded-full text-sm transform transition-transform duration-300 hover:scale-110"
-              >
-                {dsa}
-              </span>
-            ))}
-          </div>
+        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <h3 className="text-xl font-bold mb-4">Tools</h3>
+          <p className="text-gray-300 ">
+            Git, GitHub, VS Code, JetBrains, Eclipse, Visual Studio, Postman,
+            Figma, Trello, Slack
+            <br /> and you can add more in just few days of training...
+          </p>
         </div>
       </div>
     </section>

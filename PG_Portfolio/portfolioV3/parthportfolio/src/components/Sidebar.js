@@ -6,7 +6,7 @@ const Sidebar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["intro", "skills", "projects", "education", "hire"];
+      const sections = ["intro", "skills", "projects", "hire"];
 
       const observerCallback = (entries) => {
         entries.forEach((entry) => {
@@ -68,7 +68,7 @@ const Sidebar = () => {
     </>
   );
   return (
-    <div className="w-64 bg-gray-800 p-6 flex flex-col shadow-xl">
+    <div className="w-64 bg-gray-800 p-6 flex flex-col shadow-xl rounded-lg">
       <div className="flex flex-col items-center mb-8">
         <img
           src="images/profile_logo.jpeg"
@@ -84,7 +84,6 @@ const Sidebar = () => {
         <NavButton section="intro" icon={Sparkles} label="Intro" />
         <NavButton section="skills" icon={Brain} label="Skills" />
         <NavButton section="projects" icon={Rocket} label="Projects" />
-        <NavButton section="education" icon={Trophy} label="Education" />
         <NavButton section="hire" icon={Heart} label="Hire Me!" />
       </nav>
     </div>

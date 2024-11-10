@@ -1,0 +1,46 @@
+main>h1{
+    text-align: center;
+}
+
+.character-card{
+    position: relative;
+    border: 5px solid rgb(9, 53, 69);
+    background-color: rgb(11, 38, 49);
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+}
+
+.character-card:hover{
+    background-color: rgb(9, 53, 69);
+}
+
+.card_img{
+    width: 100%;
+    z-index: 1;
+}
+.card_info{
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rgb(6, 30, 37);
+    z-index: 10;
+    text-align: center;
+}
+
+/* Gallery Grid */
+
+.character-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 10px;
+    margin: 50px;
+}
+
+h3>a{
+    color: white;
+}
+
+h3{
+    color: white;
+}

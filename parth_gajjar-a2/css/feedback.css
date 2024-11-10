@@ -1,0 +1,132 @@
+
+main>h1{
+    margin: 50px;
+}
+
+input, textarea, select{
+    background-color: rgb(9, 53, 69);
+    color: white;
+}
+
+.feedform{
+    margin: 50px;
+    box-shadow: 0 0 10px black;
+}
+
+
+
+form{
+    border: 2px solid rgb(57, 185, 203);
+    border-radius: 5px;
+    padding: 10px;
+    background-color: rgb(10, 27, 37);
+    display: grid;
+    grid-template-areas: 
+    "pi gd"
+    "mg mg"
+    "sb sb";
+}
+
+@media (max-width: 1300px){
+    form{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+label{
+    display: inline-block;
+    width: 100px;
+}
+
+fieldset{
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(10, 27, 37);
+}
+
+
+/* .radiooptions{
+    display: flex;
+    justify-content: flex-start;
+    gap:1rem;
+} */
+
+.radiooptions input, .radiooptions label{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+input[type="submit"]{
+    background-color: rgb(9, 53, 69);
+    margin-left: 40px;
+}
+
+input[type="reset"]{
+    background-color: rgb(8, 31, 41);
+}
+
+.gamedetails label{
+    width: 200px;
+}
+
+.msg label{
+    width: 200px;
+}
+
+.playtime label{
+    width: 150px;
+}
+
+.feedform div{
+    margin: 10px;
+}
+
+.rside{
+    width: 300px;
+}
+
+.personalinfo{
+    grid-area: pi;
+}
+
+.gamedetails{
+    grid-area: gd;
+}
+
+.msg{
+    grid-area: mg;
+}
+.submit{
+    grid-area: sb;
+}
+.rside{
+    height: 600px;
+}
+
+
+.secondform{
+    margin: 10px;
+    margin: 50px 10px;
+}
+
+
+.secondform form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.secondform div{
+    margin: 5px;
+}
+
+.secondform label{
+    width: 100%;
+}
+
+.secondform>form>div>div{
+    display: flex;
+    
+}

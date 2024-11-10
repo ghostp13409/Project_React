@@ -1,0 +1,44 @@
+main p {
+    font-size: larger;
+}
+
+main>div{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    padding: 5px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 10px;
+    align-items: center;
+}
+
+.card_text{
+    margin: 10px;
+}
+
+.card_img{
+    margin: 10px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card, main>div>p{
+    padding: 10px;
+    background-color: rgb(11, 38, 49);
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+}
+
+main>div>p{
+    padding: 30px;
+}
+
+@media (max-width: 1300px){
+    .rside{
+        display: none;
+    }
+}
