@@ -1,11 +1,13 @@
-import { socials } from "./data";
+import { UserPen } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <section id="hire" className="min-h-screen p-8">
-      <h2 className="text-3xl font-bold mb-8">Hire Me!</h2>
+    <section id="hire" className="relative min-h-screen p-8">
+      <h1 className="text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+        Work with Me 👥
+      </h1>
       <div className="bg-gray-800 p-6 rounded-lg mb-6 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        <h3 className="text-xl font-bold mb-4">Work With Me...</h3>
+        <h3 className="text-xl font-bold mb-4">Send Me A Message</h3>
         <form className="space-y-4">
           <input
             type="text"
@@ -26,16 +28,8 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
-
-      <div className="flex gap-4">
-        {socials.map((social, Icon) => (
-          <a
-            href={social.url}
-            className="p-2 bg-gray-800 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-gray-700"
-          >
-            {social.Icon}
-          </a>
-        ))}
+      <div className="absolute bottom-10 left-5">
+        <h3 className="text-xl font-bold"> {`<---`} Or Contact Me Here</h3>
       </div>
     </section>
   );

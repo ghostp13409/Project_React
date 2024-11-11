@@ -44,21 +44,21 @@ export const socials = [
   {
     title: "Github",
     Icon: <Github className="w-6 h-6" />,
-    url: "github.com/ghostp13409",
+    url: "https://www.github.com/ghostp13409",
   },
   {
     title: "LinkedIn",
-    Icon: <Linkedin className="w-6 h-6" />,
-    url: "linkedin.com/in/parth-gajjar09",
+    Icon: <Linkedin color="#1c71d8" className="w-6 h-6" />,
+    url: "https://www.linkedin.com/in/parth-gajjar09",
   },
   {
     title: "LeetCode",
-    Icon: <SiLeetcode className="w-6 h-6" />,
-    url: "leetcode.com/ghostp134",
+    Icon: <SiLeetcode color="#ff7800" className="w-6 h-6" />,
+    url: "https://www.leetcode.com/ghostp134",
   },
   {
     title: "Instagram",
-    Icon: <Instagram className="w-6 h-6" />,
+    Icon: <Instagram color="#f66151" className="w-6 h-6" />,
     url: "https://www.instagram.com/p_13_4/profilecard/?igsh=MTBrbThrNHc1aWR3NA==",
   },
 ];
@@ -158,7 +158,7 @@ export const CollageProjects = [
     id: 2,
     title: "Batman Garage Sale",
     description: "An E-Commerse website with a bit of flavour.",
-    imageUrl: "#",
+    imageUrl: "images/projects/batman_shop.mp4",
     tags: ["JavaScript", "Express", "MongoDB", "EJS"],
   },
   {

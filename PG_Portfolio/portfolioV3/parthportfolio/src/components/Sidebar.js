@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { Brain, Heart, Rocket, Sparkles } from "lucide-react";
+import { socials } from "./data";
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("intro");
@@ -84,8 +85,18 @@ const Sidebar = () => {
         <NavButton section="intro" icon={Sparkles} label="Intro" />
         <NavButton section="skills" icon={Brain} label="Skills" />
         <NavButton section="projects" icon={Rocket} label="Projects" />
-        <NavButton section="hire" icon={Heart} label="Hire Me!" />
+        <NavButton section="hire" icon={Heart} label="Get in touch" />
       </nav>
+      <div className="flex gap-4">
+        {socials.map((social) => (
+          <a
+            href={social.url}
+            className="p-2 bg-gray-800 rounded-lg transform transition-all duration-300 hover:scale-110 hover:bg-gray-700"
+          >
+            {social.Icon}
+          </a>
+        ))}
+      </div>
     </div>
   );
 };
