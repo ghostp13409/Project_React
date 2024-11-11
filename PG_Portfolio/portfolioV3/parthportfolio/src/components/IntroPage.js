@@ -2,12 +2,10 @@ import { Star, Code, Coffee } from "lucide-react";
 const IntroPage = () => {
   return (
     <section id="intro" className="min-h-screen p-8">
-      <h1 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
-          Welcome! 👋
-        </h1>
+      <h1 className="text-4xl font-bold mb-10 bg-gradient-to-r from-blue-400 to-purple-500 text-transparent bg-clip-text">
+        Welcome! 👋
+      </h1>
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-        
-
         <p className="text-xl text-gray-300 mb-6">
           I'm Parth. I'm a developer and I build stuff! Here's some of the
           things I can do for you in summary, so you don't have to look for

@@ -2,6 +2,42 @@ import { color } from "chart.js/helpers";
 import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
 
+// Certificates
+
+export const Certificates = [
+  {
+    id: 1,
+    title: "JavaScript Essential Training",
+    issuer: "LinkedIn Learning",
+    date: "2021",
+    skills: ["JavaScript", "ES6"],
+    link: "#",
+  },
+  {
+    id: 2,
+    title: "React Essential Training",
+    issuer: "LinkedIn Learning",
+    date: "2024",
+    skills: ["React"],
+    link: "https://www.linkedin.com/learning/certificates/ac295354e31d24fb5ec322b7c989b9bd23ba6afff5b0e4eabf00e9e3a5996c63?trk=share_certificate",
+  },
+  {
+    id: 3,
+    title: "React.js: Building an Interface",
+    issuer: "LinkedIn Learning",
+    date: "2024",
+    skills: ["React", "Web Interface Design"],
+    link: "https://www.linkedin.com/learning/certificates/4a5faa2b1529f5de2a82b039fde13d6649afca2d0cf7a806b130f5f49018ad09?trk=share_certificate",
+  },
+  {
+    id: 4,
+    title: "OOP with C#",
+    issuer: "LinkedIn Learning",
+    date: "2024",
+    skills: ["C#", "OOP"],
+    link: "https://www.linkedin.com/learning/certificates/d72227d379baff564a7ee1f56571ade76057da603f379e6c9f27517017848b7c",
+  },
+];
 
 // Social Links
 export const socials = [
@@ -71,26 +107,25 @@ export const projects = [
   },
 ];
 
-
 // Skills
 export const Skills = [
   {
     id: 1,
     title: "Languages",
     tags: ["Java", "C#", "Python", "JavaScript", "HTML", "CSS"],
-    color: "bg-blue-600"
+    color: "bg-blue-600",
   },
   {
     id: 2,
     title: "Frameworks",
     tags: ["React", "Express.js", "ASP.NET", "Node", "Entity Framework", "EJS"],
-    color: "bg-green-600"
+    color: "bg-green-600",
   },
   {
     id: 3,
     title: "Databases",
-    tags:["MySQL", "SQLite", "MongoDB"],
-    color: "bg-purple-600"
+    tags: ["MySQL", "SQLite", "MongoDB"],
+    color: "bg-purple-600",
   },
   {
     id: 4,
@@ -107,6 +142,30 @@ export const Skills = [
       "Selection Sort",
       "Merge Sort",
     ],
-    color: "bg-sky-900"
-  }
-]
+    color: "bg-sky-900",
+  },
+];
+
+export const CollageProjects = [
+  {
+    id: 1,
+    title: "Spiderman Wiki",
+    description: "An Awesome website about Insomaniac's Spider Man Game.",
+    imageUrl: "videos/projects/spiderman_wiki.mkv",
+    tags: ["HTML", "CSS"],
+  },
+  {
+    id: 2,
+    title: "Batman Garage Sale",
+    description: "An E-Commerse website with a bit of flavour.",
+    imageUrl: "#",
+    tags: ["JavaScript", "Express", "MongoDB", "EJS"],
+  },
+  {
+    id: 3,
+    title: "Patient Management App",
+    description: "An fullfledged application for managing patient files.",
+    imageUrl: "#",
+    tags: ["C#", "Windows Forms", "OOP", "SOLID"],
+  },
+];

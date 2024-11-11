@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Brain, Heart, Rocket, Sparkles, Trophy } from "lucide-react";
+import { Brain, Heart, Rocket, Sparkles } from "lucide-react";
 
 const Sidebar = () => {
   const [activeSection, setActiveSection] = useState("intro");
