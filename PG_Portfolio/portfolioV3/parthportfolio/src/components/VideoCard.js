@@ -14,7 +14,7 @@ const VideoCard = ({ title, description, tags, videoUrl }) => {
         {/* Video Thumbnail */}
         <div className="h-48 bg-gray-700 rounded-lg mb-4 overflow-hidden">
           <video
-            src="videos/projects/spiderman_wiki.mp4"
+            src={videoUrl}
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
             preload="metadata"
             muted
@@ -58,7 +58,7 @@ const VideoCard = ({ title, description, tags, videoUrl }) => {
           <div className="w-full max-w-6xl p-4">
             <div className="relative rounded-lg overflow-hidden">
               <video
-                src="videos/projects/spiderman_wiki.mp4"
+                src={videoUrl}
                 className="w-full h-auto"
                 controls
                 autoPlay

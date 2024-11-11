@@ -15,7 +15,7 @@ const ProjectsPage = () => {
             title={p.title}
             description={p.description}
             tags={p.tags}
-            gifUrl={p.imageUrl}
+            videoUrl={p.imageUrl}
           />
         ))}
         {CollageProjects.map((p) => (
@@ -24,7 +24,7 @@ const ProjectsPage = () => {
             title={p.title}
             description={p.description}
             tags={p.tags}
-            gifUrl={p.imageUrl}
+            videoUrl={p.imageUrl}
           />
         ))}
       </div>

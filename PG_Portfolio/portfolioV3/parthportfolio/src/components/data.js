@@ -151,7 +151,7 @@ export const CollageProjects = [
     id: 1,
     title: "Spiderman Wiki",
     description: "An Awesome website about Insomaniac's Spider Man Game.",
-    imageUrl: "videos/projects/spiderman_wiki.mkv",
+    imageUrl: "images/projects/spierman_wiki.mp4",
     tags: ["HTML", "CSS"],
   },
   {
