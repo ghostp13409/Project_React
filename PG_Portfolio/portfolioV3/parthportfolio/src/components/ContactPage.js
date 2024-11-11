@@ -1,4 +1,4 @@
-import { UserPen } from "lucide-react";
+import { ArrowBigLeft } from "lucide-react";
 
 const ContactPage = () => {
   return (
@@ -28,8 +28,10 @@ const ContactPage = () => {
           </button>
         </form>
       </div>
-      <div className="absolute bottom-10 left-5">
-        <h3 className="text-xl font-bold"> {`<---`} Or Contact Me Here</h3>
+      <div className="absolute bottom-12 left-5 border-dashed rounded-lg border-2 border-gray-500 p-4 animate-bounce duration-800 delay-100 ">
+        <h3 className="text-xl font-bold">
+          <ArrowBigLeft className="inline-block " /> Or Contact Me Here
+        </h3>
       </div>
     </section>
   );
