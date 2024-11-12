@@ -1,4 +1,4 @@
-import { Star, Code, Coffee } from "lucide-react";
+import { Code, Coffee } from "lucide-react";
 const IntroPage = () => {
   return (
     <section id="intro" className="min-h-screen p-8">

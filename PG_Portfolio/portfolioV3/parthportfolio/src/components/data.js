@@ -1,5 +1,4 @@
-import { color } from "chart.js/helpers";
-import { Github, Linkedin, Instagram, Twitter } from "lucide-react";
+import { Github, Linkedin, Instagram } from "lucide-react";
 import { SiLeetcode } from "react-icons/si";
 
 // Certificates
@@ -117,7 +116,7 @@ export const Skills = [
   },
   {
     id: 2,
-    title: "Frameworks",
+    title: "Frameworks and Databases",
     tags: ["React", "Express.js", "ASP.NET", "Node", "Entity Framework", "EJS"],
     color: "bg-green-600",
   },
@@ -143,6 +142,12 @@ export const Skills = [
       "Merge Sort",
     ],
     color: "bg-sky-900",
+  },
+  {
+    id: 5,
+    title: "Tools",
+    tags: ["Postman", "Git", "VS Code", "Tailwind CSS", "Bootstrap", "LINQ"],
+    color: "bg-purple-600",
   },
 ];
 

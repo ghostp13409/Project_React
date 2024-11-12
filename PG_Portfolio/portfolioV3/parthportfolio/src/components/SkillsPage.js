@@ -1,7 +1,4 @@
-import { Code, Coffee } from "lucide-react";
-import ProfileStats from "./ProfileStats";
-import { Skills, Certificates, CollageProjects } from "./data";
-import ProjectCard from "./ProjectCard";
+import { Skills, Certificates } from "./data";
 
 const SkillsPage = () => {
   return (
@@ -12,8 +9,10 @@ const SkillsPage = () => {
 
       {/* <ProfileStats className="mt-6" /> */}
 
-      <div className="grid grid-cols-2 gap-6 mt-6">
-        <div>
+      {/* Education Section */}
+      <div className="grid grid grid-cols-[repeat(auto-fill,_minmax(600px,_1fr))] gap-6 mt-6">
+        {/* College | Certificates */}
+        <div className="">
           <h2 className="text-3xl font-bold mb-8 text-gray-300">College</h2>
           <div className="bg-gray-800 p-6 rounded-lg mb-6 mt-6 transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
             <h3 className="text-xl font-bold mb-2">
@@ -21,9 +20,19 @@ const SkillsPage = () => {
             </h3>
             <p className="text-gray-400">Conestoga College</p>
           </div>
+          <div className="grid grid-cols-3 gap-6">
+            <div className="bg-gray-800 p-6 rounded-lg  transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <h3 className="text-xl font-bold">GDG Member</h3>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg  transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <h3 className="text-xl font-bold">GPA 4.0</h3>
+            </div>
+            <div className="bg-gray-800 p-6 rounded-lg  transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              <h3 className="text-xl font-bold">Review Sessions</h3>
+            </div>
+          </div>
         </div>
-
-        <div>
+        <div className="">
           <h2 className="text-3xl font-bold mb-8 text-gray-300">
             Certificates
           </h2>
@@ -58,14 +67,14 @@ const SkillsPage = () => {
       <h2 className="text-3xl font-bold mb-8 mt-8 text-gray-300">Skills</h2>
 
       {/* Skills Map */}
-      <div className="flex flex-wrap gap-6">
+      <div className="grid grid-cols-[repeat(auto-fill,_minmax(250px,_1fr))] gap-6">
         {Skills.map((skillset) => (
           <div
             key={skillset.id}
             className="bg-gray-800 p-6 rounded-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1"
           >
             <h3 className="text-xl font-bold mb-4">{skillset.title}</h3>
-            <div className="grid grid-cols-4 gap-2">
+            <div className="flex flex-wrap gap-2">
               {skillset.tags.map((tag) => (
                 <span
                   key={tag}

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import Sidebar from "./Sidebar";
 import SkillsPage from "./SkillsPage";
 import ProjectsPage from "./ProjectsPage";
-import EducationPage from "./EducationPage";
 import ContactPage from "./ContactPage";
 import IntroPage from "./IntroPage";
 
