@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Github, Linkedin, Instagram, Mail, X } from "lucide-react";
+import { X } from "lucide-react";
 
-const ProjectCard = ({ title, description, tags, gifUrl }) => {
+const ProjectCard = ({ title, description, tags, imageUrl }) => {
   const [showPreview, setShowPreview] = useState(false);
 
   return (
@@ -13,7 +13,7 @@ const ProjectCard = ({ title, description, tags, gifUrl }) => {
       >
         <div className="h-48 bg-gray-700 rounded-lg mb-4 overflow-hidden">
           <img
-            src={gifUrl}
+            src={imageUrl}
             alt={title}
             className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
           />
@@ -52,7 +52,7 @@ const ProjectCard = ({ title, description, tags, gifUrl }) => {
 
           <div className="w-full max-w-6xl p-4">
             <div className="relative rounded-lg overflow-hidden">
-              <video src={gifUrl} alt={title} className="w-full h-auto" />
+              <video src={imageUrl} alt={title} className="w-full h-auto" />
 
               <div
                 className="absolute bottom-0 left-0 right-0 bg-gradient-to-t 

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import { Github, Linkedin, Instagram, Mail, X } from "lucide-react";
+import { X } from "lucide-react";
 
-const VideoCard = ({ title, description, tags, videoUrl }) => {
+const VideoCard = ({ title, description, tags, videoUrl, thumbnailUrl }) => {
   const [showPreview, setShowPreview] = useState(false);
 
   return (
@@ -13,15 +13,11 @@ const VideoCard = ({ title, description, tags, videoUrl }) => {
       >
         {/* Video Thumbnail */}
         <div className="h-48 bg-gray-700 rounded-lg mb-4 overflow-hidden">
-          <video
-            src={videoUrl}
-            className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300"
-            preload="metadata"
-            muted
-            playsInline
-          >
-            Your browser does not support the video tag.
-          </video>
+          <img
+            src={thumbnailUrl}
+            className="w-full h-full bg-gray-600 object-cover transform group-hover:scale-110 transition-transform duration-300"
+            alt={title}
+          />
         </div>
 
         <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -68,7 +64,7 @@ const VideoCard = ({ title, description, tags, videoUrl }) => {
               </video>
 
               <div
-                className="absolute bottom-0 left-0 right-0 bg-gradient-to-t 
+                className=" bg-gradient-to-t 
                 from-black/80 to-transparent p-6"
               >
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>

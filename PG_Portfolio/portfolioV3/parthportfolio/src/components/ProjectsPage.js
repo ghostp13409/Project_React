@@ -1,4 +1,5 @@
 import { CollageProjects, projects } from "./data";
+import ProjectCard from "./ProjectCard";
 import VideoCard from "./VideoCard";
 
 const ProjectsPage = () => {
@@ -9,12 +10,12 @@ const ProjectsPage = () => {
       </h1>
       <div className="grid grid-cols-[repeat(auto-fill,_minmax(300px,_1fr))] gap-6">
         {projects.map((p) => (
-          <VideoCard
+          <ProjectCard
             key={p.id}
             title={p.title}
             description={p.description}
             tags={p.tags}
-            videoUrl={p.imageUrl}
+            imageUrl={p.imageUrl}
           />
         ))}
         {CollageProjects.map((p) => (
@@ -24,6 +25,7 @@ const ProjectsPage = () => {
             description={p.description}
             tags={p.tags}
             videoUrl={p.imageUrl}
+            thumbnailUrl={p.thumbnailUrl}
           />
         ))}
       </div>

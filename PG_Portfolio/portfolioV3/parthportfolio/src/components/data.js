@@ -69,40 +69,47 @@ export const projects = [
     title: "DSA Exercises",
     description:
       "Solved 70+ algorithmic problems on LeetCode. Analyzed time and space complexity for multiple algorithms, ensuring efficient and scalable solutions. Implemented and optimized algorithms for sorting, searching, and dynamic programming, reducing computation time by 30%.",
-    imageUrl: "./logos/profile_logo.jpeg",
-    tags: ["Java", "C#", "Algorithms"],
+    imageUrl: "images/projects/DSA.jpg",
+    tags: [
+      "Java",
+      "C#",
+      "Searching",
+      "Sorting",
+      "Recursion",
+      "Time-Space Complexity",
+    ],
   },
   {
     id: 2,
     title: "LMS – Learning Management System (Open Source)",
     description:
       'Designed and integrated core system component "Progress Items". Developed comprehensive test cases for seamless system integration. Maintained and improved documentation and code formatting.',
-    imageUrl: "./logos/profile_logo.jpeg",
-    tags: ["C#", "SQLite"],
+    imageUrl: "images/projects/LMS.jpg",
+    tags: ["C#", "Entity Framework", "SQLite", "Testing"],
   },
   {
     id: 3,
     title: "Web Scrapper",
     description:
       "Developed Selenium-based web scrapers for stock and price monitoring on local retail sites. Implemented customized SMS-based alerts using IFTTT APIs, resulting in an early edge on stock details in a competitive market.",
-    imageUrl: "./logos/profile_logo.jpeg",
-    tags: ["Python", "Selenium", "Web Scraping"],
+    imageUrl: "images/projects/WEB.jpg",
+    tags: ["Python", "Selenium", "BeautifulSoup"],
   },
   {
     id: 4,
     title: "Trading Bot",
     description:
       "Strategized a volatility-based trading bot. Designed the trading algorithm and simulated paper trading for testing. Deployed and experimented on the Binance platform for performance tuning.",
-    imageUrl: "./logos/profile_logo.jpeg",
-    tags: ["Python", "Trading", "Binance"],
+    imageUrl: "images/projects/Trading.jpg",
+    tags: ["Python", "API", "sqlalchemy", "Pandas", "Web Sockets"],
   },
   {
     id: 5,
-    title: "E-commerce Website",
+    title: "Graphic Design",
     description:
-      "Designed a fully class-based product and order system for scalability and code efficiency. Handcrafted CSS styling for a unique web design.",
-    imageUrl: "./logos/profile_logo.jpeg",
-    tags: ["JavaScript", "Express", "MongoDB", "EJS"],
+      "Designed a visually appealing Logos, Posters, Brochures for a local business.",
+    imageUrl: "images/projects/Design.jpg",
+    tags: ["Canva", "Design", "Creativity"],
   },
 ];
 
@@ -158,6 +165,7 @@ export const CollageProjects = [
     description: "An Awesome website about Insomaniac's Spider Man Game.",
     imageUrl: "images/projects/spierman_wiki.mp4",
     tags: ["HTML", "CSS"],
+    thumbnailUrl: "images/projects/spiderman_logo.jpg",
   },
   {
     id: 2,
@@ -165,6 +173,7 @@ export const CollageProjects = [
     description: "An E-Commerse website with a bit of flavour.",
     imageUrl: "images/projects/batman_shop.mp4",
     tags: ["JavaScript", "Express", "MongoDB", "EJS"],
+    thumbnailUrl: "images/projects/batman_logo.jpg",
   },
   {
     id: 3,
@@ -172,5 +181,44 @@ export const CollageProjects = [
     description: "An fullfledged application for managing patient files.",
     imageUrl: "#",
     tags: ["C#", "Windows Forms", "OOP", "SOLID"],
+    thumbnailUrl: "images/projects/coding_templete.jpg",
   },
 ];
+
+export const DSACont = () => {
+  return (
+    <div className="flex flex-col items-center justify-center">
+      <h1 className="text-2xl font-bold text-center">DSA Contests</h1>
+      <div className="flex flex-row items-center justify-center">
+        <a href="https://www.codechef.com/">
+          <img
+            src="images/DSA/codechef.png"
+            alt="CodeChef"
+            className="w-20 h-20 m-4"
+          />
+        </a>
+        <a href="https://www.codeforces.com/">
+          <img
+            src="images/DSA/codeforces.png"
+            alt="Codeforces"
+            className="w-20 h-20 m-4"
+          />
+        </a>
+        <a href="https://www.hackerrank.com/">
+          <img
+            src="images/DSA/hackerrank.png"
+            alt="HackerRank"
+            className="w-20 h-20 m-4"
+          />
+        </a>
+        <a href="https://www.leetcode.com/">
+          <img
+            src="images/DSA/leetcode.png"
+            alt="LeetCode"
+            className="w-20 h-20 m-4"
+          />
+        </a>
+      </div>
+    </div>
+  );
+};

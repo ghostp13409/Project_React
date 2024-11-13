@@ -61,14 +61,14 @@ const IntroPage = () => {
         What do I know?
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-gradient-to-r from-cyan-800 to-blue-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <h3 className="text-xl font-bold mb-4">Multilingual</h3>
           <p className="text-gray-300 ">
             Java, Python, JavaScript, C#, React, ASP.Net, SQL, NoSQL <br /> You
             Name it, <br /> I got it...
           </p>
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-gradient-to-r from-violet-800 to-fuchsia-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <h3 className="text-xl font-bold mb-4">Frameworks and stuff</h3>
           <p className="text-gray-300 ">
             HTML, CSS, Bootstrap, Tailwind, React, ASP.Net, Entity Framework,
@@ -76,7 +76,7 @@ const IntroPage = () => {
             <br /> All that cool Stuff...
           </p>
         </div>
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+        <div className="bg-gradient-to-r from-sky-800 to-indigo-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
           <h3 className="text-xl font-bold mb-4">Tools</h3>
           <p className="text-gray-300 ">
             Git, GitHub, VS Code, JetBrains, Eclipse, Visual Studio, Postman,
