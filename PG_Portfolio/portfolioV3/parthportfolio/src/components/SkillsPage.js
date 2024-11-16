@@ -51,7 +51,7 @@ const SkillsPage = () => {
                   {cert.skills.map((skill) => (
                     <span
                       key={skill}
-                      className={`px-3 py-1 bg-gray-700 rounded-full text-sm`}
+                      className={`px-3 py-1 bg-gray-700 rounded-full text-s transform transition-transform duration-300 hover:scale-110`}
                     >
                       {skill}
                     </span>
@@ -78,7 +78,7 @@ const SkillsPage = () => {
               {skillset.tags.map((tag) => (
                 <span
                   key={tag}
-                  className={`px-3 py-1 ${skillset.color} rounded-full text-sm transform transition-transform duration-300 hover:scale-110`}
+                  className={`px-3 py-1 ${skillset.color} rounded-full text-s transform transition-transform duration-300 hover:scale-110`}
                 >
                   {tag}
                 </span>

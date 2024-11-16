@@ -1,4 +1,4 @@
-import { Code, Coffee } from "lucide-react";
+import { Code, Coffee, DatabaseZap, Languages, Wrench } from "lucide-react";
 const IntroPage = () => {
   return (
     <section id="intro" className="min-h-screen p-8">
@@ -62,23 +62,26 @@ const IntroPage = () => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <div className="bg-gradient-to-r from-cyan-800 to-blue-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-          <h3 className="text-xl font-bold mb-4">Multilingual</h3>
-          <p className="text-gray-300 ">
+          <Languages className="m-auto mb-4 h-10 w-10" />
+          <h2 className="text-xl font-bold mb-4">Multilingual</h2>
+          <p className="text-gray-300 font-bold text-l mb-8 mt-5 ">
             Java, Python, JavaScript, C#, React, ASP.Net, SQL, NoSQL <br /> You
             Name it, <br /> I got it...
           </p>
         </div>
         <div className="bg-gradient-to-r from-violet-800 to-fuchsia-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-          <h3 className="text-xl font-bold mb-4">Frameworks and stuff</h3>
-          <p className="text-gray-300 ">
+          <DatabaseZap className="m-auto mb-4 h-10 w-10" />
+          <h2 className="text-xl font-bold mb-4">Frameworks and stuff</h2>
+          <p className="text-gray-300 font-bold text-l mb-8 mt-5">
             HTML, CSS, Bootstrap, Tailwind, React, ASP.Net, Entity Framework,
             Node.js, Express, MongoDB, MySQL, EJS, WordPress, LINQ
             <br /> All that cool Stuff...
           </p>
         </div>
         <div className="bg-gradient-to-r from-sky-800 to-indigo-800 p-6 rounded-lg shadow-lg border border-gray-700 relative overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+          <Wrench className="m-auto mb-4 h-10 w-10" />
           <h3 className="text-xl font-bold mb-4">Tools</h3>
-          <p className="text-gray-300 ">
+          <p className="text-gray-300 font-bold text-l mb-8 mt-5">
             Git, GitHub, VS Code, JetBrains, Eclipse, Visual Studio, Postman,
             Figma, Trello, Slack
             <br /> and you can add more in just few days of training...

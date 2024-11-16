@@ -26,7 +26,7 @@ const ProjectCard = ({ title, description, tags, imageUrl }) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
+              className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-s transform transition-transform duration-300 hover:scale-110"
             >
               {tag}
             </span>
@@ -52,14 +52,14 @@ const ProjectCard = ({ title, description, tags, imageUrl }) => {
 
           <div className="w-full max-w-6xl p-4">
             <div className="relative rounded-lg overflow-hidden">
-              <video src={imageUrl} alt={title} className="w-full h-auto" />
+              <img src={imageUrl} alt={title} className="w-full h-auto" />
 
               <div
                 className="absolute bottom-0 left-0 right-0 bg-gradient-to-t 
                 from-black/80 to-transparent p-6"
               >
                 <h2 className="text-2xl font-bold mb-2">{title}</h2>
-                <p className="text-gray-300">{description}</p>
+                <p className="text-gray-300 text-xl">{description}</p>
               </div>
             </div>
           </div>

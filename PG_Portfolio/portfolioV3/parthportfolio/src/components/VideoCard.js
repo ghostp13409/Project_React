@@ -27,7 +27,7 @@ const VideoCard = ({ title, description, tags, videoUrl, thumbnailUrl }) => {
           {tags.map((tag, index) => (
             <span
               key={index}
-              className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-sm"
+              className="px-3 py-1 bg-blue-600/20 text-blue-400 rounded-full text-s transform transition-transform duration-300 hover:scale-110"
             >
               {tag}
             </span>

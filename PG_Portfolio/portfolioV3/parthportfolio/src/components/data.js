@@ -154,7 +154,7 @@ export const Skills = [
     id: 5,
     title: "Tools",
     tags: ["Postman", "Git", "VS Code", "Tailwind CSS", "Bootstrap", "LINQ"],
-    color: "bg-purple-600",
+    color: "bg-fuchsia-500",
   },
 ];
 
