@@ -5,87 +5,52 @@ const Info = () => {
     <div className="info-page">
       <div className="info-content">
         <section className="info-section">
-          <h3>
-            Hey there, are you looking for an awesome developer to join your
-            team? Well look no further...
-          </h3>
+          <h3>Welcome! 👋</h3>
           <p>
-            Welcome to the digital realm of Parth Gajjar, where code meets
-            creativity, and passion fuels innovation! Buckle up, because you're
-            about to embark on an exhilarating journey through my tech-savvy
-            universe.
+            I'm Parth. I'm a developer and I build stuff! Here's some of the
+            things I can do for you in summary, so you don't have to look for
+            things
           </p>
         </section>
-        <section className="info-section">
-          <h3>Who Am I?</h3>
-          <p>
-            Picture this: a developer who not only writes clean, efficient code
-            but also turns complex problems into elegant solutions. That's me,
-            Parth—a self-proclaimed coding aficionado with a flair for
-            transforming caffeine into code.
-          </p>
-        </section>
-        <section className="info-section">
-          <h3>Why Me?</h3>
-          <ul>
-            <li>
-              <strong>Dynamic Skillset:</strong> From Java and Python to
-              JavaScript and React, my toolbox is brimming with versatile skills
-              ready to tackle any challenge you throw at me. Whether it's
-              developing robust back-end systems or crafting sleek,
-              user-friendly interfaces, I've got the chops to get it done.
-            </li>
-            <li>
-              <strong>Proven Experience:</strong> My journey has taken me
-              through exciting terrains—designing intricate algorithms for
-              LeetCode problems, crafting web scrapers that leave no data
-              unturned, and even conjuring up a trading bot that waltzes through
-              the volatility of Binance. If there's a tech adventure to be had,
-              I've likely been there, coded that.
-            </li>
-            <li>
-              <strong>Creative Problem-Solving:</strong> Think of me as a tech
-              detective, hunting down bugs with the precision of Sherlock Holmes
-              and the tenacity of a caffeine-fueled squirrel. No problem is too
-              big, no bug too elusive. I’m relentless when it comes to finding
-              solutions and making the impossible, possible.
-            </li>
-            <li>
-              <strong>Team Player:</strong> Need someone who can gel with your
-              team like peanut butter with jelly? Look no further. Collaboration
-              is my middle name (okay, not literally, but you get the gist). I
-              bring a positive, energetic vibe to every project, ensuring we not
-              only achieve our goals but have a blast doing it.
-            </li>
-          </ul>
-        </section>
-        <section className="info-section">
-          <h3>What Do I Offer?</h3>
-          <ul>
-            <li>
-              <strong>Innovative Projects:</strong> From building a Learning
-              Management System to designing a custom E-commerce platform, my
-              portfolio is a testament to my versatility and creativity. Take a
-              peek at my projects, and you'll see the diversity of my work—from
-              intricate algorithms to engaging web applications.
-            </li>
-            <li>
-              <strong>Cutting-Edge Technologies:</strong> Whether it's
-              leveraging the latest frameworks or exploring new programming
-              paradigms, I stay at the forefront of technology. My continuous
-              learning ethos ensures I'm always equipped with the freshest
-              skills and knowledge to bring to your team.
-            </li>
-            <li>
-              <strong>Humor & Enthusiasm:</strong> Let’s be real—working with
-              someone who can code like a wizard is great, but working with
-              someone who can make you laugh while doing it? That’s priceless. I
-              believe in maintaining a light-hearted, enthusiastic work
-              environment where creativity can flourish and deadlines are met
-              with a smile.
-            </li>
-          </ul>
-        </section>
+        <h2>What can I do for You?</h2>
+        <div className="service-stack">
+          <section className="info-section">
+            <h3>Software Engineering</h3>
+            <p>I can build you a software that solves your problems</p>
+          </section>
+          <section className="info-section">
+            <h3>Database Management</h3>
+            <p>
+              I can manage your database and make sure it's secure and efficient
+            </p>
+          </section>
+          <section className="info-section">
+            <h3>Testing</h3>
+            <p>I can test your software and make sure no bug goes unnoticed!</p>
+          </section>
+        </div>
+        <h2>What do I know?</h2>
+        <div className="service-stack">
+          <section className="info-section">
+            <h3>Multilingual</h3>
+            <p>Java, Python, JavaScript, C#, React, ASP.Net, SQL, NoSQL <br /> You
+            Name it, <br /> I got it...</p>
+          </section>
+          <section className="info-section">
+            <h3>Frameworks and stuff</h3>
+            <p>
+            HTML, CSS, Bootstrap, Tailwind, React, ASP.Net, Entity Framework,
+            Node.js, Express, MongoDB, MySQL, EJS, WordPress, LINQ
+            <br /> All that cool Stuff...            
+            </p>
+          </section>
+          <section className="info-section">
+            <h3>Tools</h3>
+            <p>Git, GitHub, VS Code, JetBrains, Eclipse, Visual Studio, Postman,
+            Figma, Trello, Slack
+            <br /> and you can add more in just few days of training...</p>
+          </section>
+        </div>  
         <section className="info-section">
           <h3>Ready to Collaborate?</h3>
           <p>

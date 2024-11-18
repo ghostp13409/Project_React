@@ -111,6 +111,13 @@ export const projects = [
     imageUrl: "images/projects/Design.jpg",
     tags: ["Canva", "Design", "Creativity"],
   },
+  {
+    id: 6,
+    title: "Patient Management App",
+    description: "An fullfledged application for managing patient files.",
+    imageUrl: "images/projects/coding_templete.jpg",
+    tags: ["C#", "Windows Forms", "OOP", "SOLID"],
+  },
 ];
 
 // Skills
@@ -175,14 +182,7 @@ export const CollageProjects = [
     tags: ["JavaScript", "Express", "MongoDB", "EJS"],
     thumbnailUrl: "images/projects/batman_logo.jpg",
   },
-  {
-    id: 3,
-    title: "Patient Management App",
-    description: "An fullfledged application for managing patient files.",
-    imageUrl: "#",
-    tags: ["C#", "Windows Forms", "OOP", "SOLID"],
-    thumbnailUrl: "images/projects/coding_templete.jpg",
-  },
+    
 ];
 
 export const DSACont = () => {
